@@ -1,0 +1,67 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.navbar {
+  background-color: rgb(40, 42, 53);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  width: 100%;
+  gap: 10px;
+}
+
+li {
+  display: inline;
+}
+
+nav a {
+  color: azure;
+  font-weight: 100px;
+  padding: 8px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: aqua;
+  transition: 0.5s ease-in-out;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 7px;
+}
+
+.data {
+  flex-direction: row;
+  margin-top: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: tomato;
+}
+
+#profile {
+  margin-left: 40px;
+  margin-top: 5px;
+}
+
+#data_diri {
+  margin-left: 200px;
+  margin-top: 10px;
+}
+
+#isi_data {
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+#pp {
+  border-radius: 50%;
+  width: 100px;
+  height: 50px;
+}
