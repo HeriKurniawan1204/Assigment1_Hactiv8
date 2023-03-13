@@ -9,47 +9,69 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="">PRODUCT</a></li>
-        <li><a href="">GALLERY</a></li>
-        <li><a href="">BLOG</a></li>
-        <li><a href="">INVENTORY</a></li>
-      </ul>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="product.html">PRODUCT</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="#">BLOG</a>
+      <a href="#">INVENTORY</a>
+      <div class="animation start-home"></div>
     </nav>
+    <!-- Navbar End -->
 
-    <div class="data">
+    <!-- Data -->
+    <div class="data" id="iniData">
       <span id="profile">
         <img id="pp" src="asset/img/itachi.jpg" alt="" />
-        <h4>Heri Kurniawan</h4>
-        <p>Front End Development</p>
+        <h4><span id="fname"></span></h4>
+        <p><span id="role"></span></p>
         <button type="submit">Edit</button>
-        <button type="submit">Resume</button>
+        <button id="my-button">Sign In</button>
       </span>
       <span id="data_diri">
-        <p>Avaibility :</p>
-        <p>Usia :</p>
-        <p>Lokasi :</p>
-        <p>Pengalaman :</p>
-        <p>Email :</p>
-      </span>
-      <span id="isi_data">
-        <p>Full Time</p>
-        <p>21</p>
-        <p>Tangerang Selatan</p>
-        <p>2</p>
-        <p>heri.kurnwan12@gmail.com</p>
+        <p>Avaibility :<span id="ava"></span></p>
+        <p>Usia :<span id="usia"></span> Tahun</p>
+        <p>Lokasi :<span id="lokasi"></span></p>
+        <p>Pengalaman :<span id="pengalaman"></span></p>
+        <p>Email :<span id="email"></span> @Gmail.com</p>
       </span>
     </div>
-    <form action="">
-      <p>Nama : <input type="text" name="nama" placeholder="Masukan Nama Anda" /></p>
-      <p>Role : <input type="text" name="role" /></p>
-      <p>Avaibility : <input type="text" name="avaibility" /></p>
-      <p>Usia : <input type="text" name="usia" /></p>
-      <p>Lokasi : <input type="text" name="lokasi" /></p>
-      <p>Pengalaman : <input type="text" name="pengalaman" /></p>
-      <p>Email : <input type="text" name="email" /></p>
-    </form>
+    <!-- Data End -->
+    <div id="my-box" class="content hide">
+      <form id="my-form" method="post">
+        <ul>
+          <li>
+            <label for="fname">Nama</label>
+            <input type="text" name="fname" id="fname" />
+          </li>
+          <li>
+            <label for="role">Role</label>
+            <input type="text" name="role" id="role" />
+          </li>
+          <li>
+            <label for="ava">Avaibility</label>
+            <input type="text" name="ava" id="ava" />
+          </li>
+          <li>
+            <label for="usia">Usia</label>
+            <input type="text" name="usia" id="usia" />
+          </li>
+          <li>
+            <label for="lokasi">Lokasi</label>
+            <input type="text" name="lokasi" id="lokasi" />
+          </li>
+          <li>
+            <label for="pengalaman">Pengalaman</label>
+            <input type="text" name="pengalaman" id="pengalaman" />
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" />
+          </li>
+        </ul>
+        <input type="submit" value="submit" />
+      </form>
+    </div>
+    <script src="index.js"></script>
   </body>
 </html>
